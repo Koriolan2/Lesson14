@@ -20,10 +20,11 @@ DomElement.prototype.createBlock = function (selector, text) {
     }
     rez.innerHTML = text;
 
-    rez.style.cssText='height:'+ this.height + ';' +
-                      ' width:' + this.width + ';' +
-                      'background-color:' + this.bg + ';' +
-                      'font-size:' + this.fontSize + ';';
+    rez.style.cssText = `height: ${this.height};
+                         width: ${this.width};
+                         font-size: ${this.fontSize};
+                         background-color: ${this.bg};
+                        `;
 
     document.body.append(rez);
 }
